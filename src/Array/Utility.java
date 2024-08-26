@@ -9,4 +9,12 @@ public class Utility {
         }
         return array;
     }
+
+    public static double[] convertToDoubleArray(String[] input) {
+        double[] array = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            array[i] = Double.parseDouble(input[i].trim());
+        }
+        return array;
+    }
 }
